@@ -6,4 +6,5 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get upgrade -y
 
 COPY server/requirements.txt /app/requirements.txt
+
 RUN pip install -r requirements.txt && chmod -R +x /app
