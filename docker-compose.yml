@@ -1,0 +1,9 @@
+services:
+  contactapi:
+    image: ghcr.io/tna76874/contact-api:latest
+    ports:
+      - 5000:5000
+    volumes:
+      - ./data:/app/data
+    environment:
+      - CONTACT_API_TURNSTILE_ENABLED=true

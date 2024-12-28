@@ -1,0 +1,13 @@
+cryptography==43.0.3
+email-validator==2.2.0
+envelope==2.0.5
+Cython==3.0.11
+gunicorn==23.0.0
+Flask==3.1.0
+Flask_RESTful==0.3.10
+flask-cors==5.0.0
+pydantic[email]==2.10.4
+pytz==2024.2
+PyYAML==6.0.2
+Requests==2.32.3
+SQLAlchemy==2.0.36
