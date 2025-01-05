@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+}
+
+#hostname, #apiKey {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+#formsList {
+    list-style-type: none; /* Entfernt die Standard-Aufzählungszeichen */
+    padding: 0;
+}
+
+.form-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.form-item:hover {
+    transform: scale(1.02); /* Leichte Vergrößerung beim Hover */
+}
+
+.form-item h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.form-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.form-item .data {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.form-data {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    white-space: pre-wrap; /* Zeilenumbruch für lange Texte */
+}
+
+.form-data strong {
+    color: #333;
+}
