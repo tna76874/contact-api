@@ -65,3 +65,9 @@ h2 {
 .form-data strong {
     color: #333;
 }
+
+@media print {
+    .hidden {
+        display: none;
+    }
+}
