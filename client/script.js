@@ -33,12 +33,21 @@ function displayForms(forms) {
         const listItem = document.createElement('li');
         listItem.className = 'form-item'; // CSS-Klasse hinzufügen
 
+        // Überprüfe das 'validated'-Feld und setze den entsprechenden Text
+        let validationStatus = '';
+        if (form.validated === true) {
+            validationStatus = 'Email-Verifizierung: erfolgreich';
+        } else if (form.validated === false) {
+            validationStatus = 'Email-Verifizierung: ausstehend';
+        }
+
         // Inhalt des Listenelements erstellen
         listItem.innerHTML = `
             <h3>Vorgangsnummer: ${form.fid}</h3>
             <p><strong>Datum:</strong> ${new Date(form.date).toLocaleString()}</p>
             <p><strong>Tag:</strong> ${form.tag}</p>
             <p><strong>Source:</strong> ${form.source}</p>
+            ${validationStatus ? `<p><strong>${validationStatus}</strong></p>` : ''}
             <div class="data">
                 <strong>Daten:</strong>
                 <div class="form-data">
@@ -52,6 +61,7 @@ function displayForms(forms) {
         formsList.appendChild(listItem);
     });
 }
+
 
 // Formulare laden, wenn die Seite geladen wird
 window.onload = loadForms;
